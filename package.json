@@ -8,9 +8,14 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
     "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.3",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "express-validator": "^6.9.2",
     "json-server": "^0.16.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.15",
     "node-sass": "4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -27,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start2": "node server.js",
+    "server": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -51,8 +58,10 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "lint-staged": "^10.5.3",
     "netlify-cli": "^3.4.3",
+    "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5",
     "prop-types": "^15.7.2",
     "redux-devtools-extension": "2.13.8"
