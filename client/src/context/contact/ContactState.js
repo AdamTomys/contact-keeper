@@ -10,6 +10,8 @@ import {
   SET_CURRENT,
   CLEAR_CURRENT,
 } from '../types';
+import PropTypes from 'prop-types';
+import AuthState from '../auth/AuthState';
 
 const ContactState = props => {
   const initialState = {
@@ -94,6 +96,10 @@ const ContactState = props => {
       {props.children}
     </ContactContext.Provider>
   );
+};
+
+ContactState.propTypes = {
+  children: PropTypes.object,
 };
 
 export default ContactState;

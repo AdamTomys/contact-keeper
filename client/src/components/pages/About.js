@@ -12,9 +12,9 @@ const About = () => {
         <strong>Version: 0.0.1</strong>
       </p>
     </div>
-  )
-}
+  );
+};
 
-About.propTypes = {}
+About.propTypes = {};
 
 export default About;
